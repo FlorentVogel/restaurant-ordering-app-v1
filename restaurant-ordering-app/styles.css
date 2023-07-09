@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+/* TYPOGRAPHY */
+
+h1, .subheading, h3,
+.order-item {
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    font-size: 2.75rem;
+    padding-left: 1em;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 0 2px black;
+}
+
+.subheading {
+    font-size: 2rem;
+} 
+
+.item-content h3, p {
+    padding: 0.3em 0;
+}
+
+.item-title,
+.order-item,
+.total-price,
+.order-title {
+    font-size: 2rem;
+}
+
+.item-description {
+    font-style: italic;
+    color: #8B8B8B;
+}
+
+.item-price,
+.order-item-price,
+.total-price,
+.order-title {
+    font-weight: bold;
+}
+
+.item-description,
+.item-price,
+.order-item-price {
+    font-size: 1.5rem;
+}
+
+.order-title {
+    text-align: center;
+    margin: 0 auto 2em;
+    border: 1px solid black;
+    padding: 1em;
+    width: fit-content;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3em auto 1em;
+}
+
+/* LAYOUT */
+
+    header {
+        background-image: url("images/mickys-dinner-app.jpg");
+        background-position-y: 20%;
+        background-size: cover;
+        min-height: 12vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .items-section, .cart-content {
+        margin: 3em auto 0;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3em 1em;
+        border-bottom: 1px solid #8B8B8B;
+    }
+
+    .item-content {
+        width: 70%;
+    }
+
+    .item-img,
+    .item-btn {
+        width: 15%;
+    }
+
+    .item-emoji {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .cart-content {
+        padding: 0 2em;
+    }
+
+
+    .order-item-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0.5em 0;
+    }
+
+    .order-item {
+        width: 30%;
+    }
+    .order-item-price {
+        width: 60%;
+        text-align: end;
+    }
+
+    .order-total {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 3em;
+    }
+
+    .checkout-divider {
+        border: 1px solid black;
+        margin: 4em 0;
+    }
+
+    .order-complete {
+        text-align: center;
+        width: 100%;
+        border: 3px solid #059669;
+        background-color: #16DB99;
+        height: 150px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 1px #3C3C3C;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+/* FORM */
+
+.form-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.payment-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #8B8B8B;
+    padding: 2em;
+    background: white;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 1em 0.5em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: 1px solid #8B8B8B;
+    font-size: 1.5rem;
+}
+
+/* BUTTONS */
+
+    .add-to-cart-btn {
+        font-size: 4rem;
+        background: none;
+        color: #8B8B8B;
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #8B8B8B;
+        border-radius: 50%;
+        padding: 0.03em 0.3em;
+    }
+
+    .add-to-cart-btn:hover {
+        color: #3C3C3C;
+        border-color: #3C3C3C;
+    }
+
+    .remove-btn {
+        background: none;
+        width: 10%;
+        color: #8B8B8B;
+        border: none;
+        
+    }
+    .remove-btn:hover {
+        color: #3C3C3C;
+    }
+
+    .order-btn,
+    .submit-btn,
+    .new-order-btn {
+        width: 100%;
+        padding: 0.8em 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        background-color: #16DB99;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .order-btn:hover,
+    .submit-btn:hover,
+    .new-order-btn:hover {
+        background-color: #059669;
+    }
+
